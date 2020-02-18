@@ -4,7 +4,7 @@ Run these commands in a terminal window from start to end in order to set up a d
 # Install Homebrew
 Homebrew will act as the main software package system for us to install new packages/environments.
 
-`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)`
+`/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
 
 # Install iTerm2
 iTerm2 is a great terminal emulator that allows us to have more functionality than a regular terminal window.
@@ -45,9 +45,13 @@ curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/ma
 # Install Docker
 Next, we need to install Docker. The technical description is below.  But, essentially, Docker allows us to build "containers" that allows us to install various software packages for development (Python packages, R packages, or any packages that you use daily when developing) that can be utilized regardless of what software packages are previously installed on our local machine.  This concept/tool allow us to reproduce our work on any MacOS machine and make it very easy to pass work from one colleague to another.  
 
-### Technical:
+### Technical
 Docker is a set of platform-as-a-service products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries and configuration files; they can communicate with each other through well-defined channels.
 
 `brew install docker`
 
 Test Docker is working 
+`docker --version`
+
+# Done!
+Next, in this [repo](https://github.com/zcox10/template_ds_setup), we'll go over how to setup template data science projects that should be used for every repo using docker.
