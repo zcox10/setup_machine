@@ -50,7 +50,8 @@ Docker is a set of platform-as-a-service products that use OS-level virtualizati
 
 `brew install docker`
 
-Test Docker is working 
+Test Docker is working with
+
 `docker --version`
 
 # Done!
