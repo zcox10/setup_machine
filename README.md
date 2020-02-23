@@ -72,5 +72,7 @@ Test Docker is working with:
 and
 `docker run hello-world`
 
-# Done!
-Next, in this [repo](https://github.com/zcox10/template_ds_setup), we'll go over how to setup template data science projects that should be used for every repo using docker.
+# Install repo2docker
+repo2docker allows us to take any git repository, build a Docker image from that repository, and edit the repository while pushing the changes to GitHub. Install repo2docker with:
+`python3 -m pip install jupyter-repo2docker`
+Then, fork and clone this template data science [repo](https://github.com/zcox10/template_ds_setup). We'll go over how to setup template data science projects that should be used for every repo using docker.
