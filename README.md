@@ -74,5 +74,7 @@ and
 
 # Install repo2docker
 repo2docker allows us to take any git repository, build a Docker image from that repository, and edit the repository while pushing the changes to GitHub. Install repo2docker with:
+
 `python3 -m pip install jupyter-repo2docker`
+
 Next, we'll go over how to setup template data science projects that should be used for every repo using docker [here](https://github.com/zcox10/template_ds_setup).
