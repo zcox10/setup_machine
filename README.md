@@ -11,6 +11,9 @@ iTerm2 is a great terminal emulator that allows us to have more functionality th
 
 `brew cask install iterm2`
 
+# Install Anaconda3
+We'll need Anaconda in order to access some basic languages (Python and R) and packages in order to run commands for setting up the rest of the installs going forward.  Anaconda can be installed [here](https://www.anaconda.com/distribution/#download-section). Make sure you install the version for Python 3. The GUI install should be pretty straight forward.  
+
 # Install zsh
 The Z shell is a Unix shell that can be used as an interactive login shell and as a command interpreter for shell scripting. This is simply just a well-designed terminal shell that allows us to use many useful features when scripting.
 
@@ -41,6 +44,19 @@ curl -O https://raw.githubusercontent.com/MartinSeeler/iterm2-material-design/ma
   5. Click Import…
   6. Select the material-design-colors.itermcolors file
   7. Select the material-design-colors from Load Presets…
+
+# Sourcing .bash_profile to .zshrc
+zsh uses it's own config file (unlike a normal bash terminal, which uses `.bash_profile`). Run these commands:
+```cd ~
+open .zshrc
+```
+At the end of the .zshrc file - input these lines of code:
+```
+source ~/.bash_profile
+PATH=${PATH}:
+```
+
+Now, all of your packages from your .bash_profile should be sourced into zsh and you can have access to everything that has been previously installed.  
 
 # Install Docker
 Next, we need to install Docker. The technical description is below.  But, essentially, Docker allows us to build "containers" that allows us to install various software packages for development (Python packages, R packages, or any packages that you use daily when developing) that can be utilized regardless of what software packages are previously installed on our local machine.  This concept/tool allow us to reproduce our work on any MacOS machine and make it very easy to pass work from one colleague to another.  
